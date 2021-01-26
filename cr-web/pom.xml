@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.Credit_recognition</groupId>
+    <artifactId>Credit_recognition</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>cr-web</artifactId>
+  <packaging>war</packaging>
+  <name>cr-web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    
+    <dependency>
+    	<groupId>com.Credit_recognition</groupId>
+    	<artifactId>cr-user</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>war</type>
+    </dependency>
+    <dependency>
+    	<groupId>com.Credit_recognition</groupId>
+    	<artifactId>cr-credit</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>war</type>
+    </dependency>
+    <dependency>
+    	<groupId>com.Credit_recognition</groupId>
+    	<artifactId>cr-course</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<type>war</type>
+    </dependency>
+  </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-war-plugin</artifactId>
+  			<version>2.6</version>
+  			<configuration>
+  			   <overlays>
+  			      <overlay>
+  			          <groupId>com.Credit_recognition</groupId>
+  			          <artifactId>cr-user</artifactId>
+  			      </overlay>
+  			      <overlay>
+  			          <groupId>com.Credit_recognition</groupId>
+  			          <artifactId>cr-credit</artifactId>
+  			      </overlay>
+  			      <overlay>
+  			          <groupId>com.Credit_recognition</groupId>
+  			          <artifactId>cr-course</artifactId>
+  			      </overlay>
+  			   </overlays>
+  			</configuration>
+  			
+  		</plugin>
+  		
+  	</plugins>
+  </build>
+</project>

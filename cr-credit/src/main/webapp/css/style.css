@@ -1,0 +1,42 @@
+div,table{
+	border:2px solid red;
+}
+.div_body{
+	position: absolute;
+	top:8px;
+	bottom: 8px;
+	left: 8px;
+	right: 8px;
+	padding: 30px;
+}
+.div_ins_del{
+	padding-bottom:8px;
+	text-align:right;
+}
+.form_fill_insert{
+	text-align:center;
+	border:2px solid red;
+}
+.div_table{
+	position: absolute;
+	top: 90px;
+	bottom: 120px;
+	left: 30px;
+	right: 30px;
+}
+.div_score_sav_sub{
+	position: absolute;
+	height:100px;
+	bottom: 8px;
+	left: 30px;
+	right: 30px;
+}
+.div_score{
+	width:40%;
+	float:left;
+}
+.div_sav_sub{
+	width:40%;
+	float:right;
+}
+
